@@ -1,0 +1,223 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainPage.master.cs" Inherits="MainPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  <title>Appointment System</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+  <script type="text/javascript">
+      $(window).load(function () {
+          $('#slider').nivoSlider();
+      });
+    </script>
+
+    <style type="text/css">
+        .style1
+        {
+            text-decoration: underline;
+        }
+        .style2
+        {
+            text-align: justify;
+        }
+        .style3
+        {
+            font-size: 11pt;
+            font-family: "Times New Roman";
+        }
+        .style4
+        {
+            font-family: "Times New Roman";
+        }
+    </style>
+
+    <!-- Put the following javascript before the closing </head> tag. -->
+ <%--<script>
+     function renderFbLike() {
+         var parent = document.getElementById('fblikediv');
+         var child = document.getElementById('fblikeimg');
+         parent.removeChild(child);
+
+         var html = "<iframe src="http://www.facebook.com/plugins/like.php?href=http://localhost:2591/Appointment%20System/Default.aspx" 
+    scrolling="no" 
+    frameborder="0" 
+    style="border:none; overflow:hidden; width:450px; height:80px;" 
+    allowTranspa>
+</iframe>"
+         document.getElementById('fblikediv').innerHTML = html;
+     }
+ </script>--%>
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+
+<div id="main">
+	<div id="site_content">
+      <div id="site_heading">
+	    <h1>Online Appointment&nbsp; Management System</h1>
+	    <h2>&nbsp;Connecting you to the right people.....&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="#0066FF" 
+                NavigateUrl="~/login.aspx">Login Here</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="#0066FF" 
+                NavigateUrl="~/registration.aspx">Register Here</asp:HyperLink>
+          </h2> 
+	  </div>
+
+        <div id="header">
+	        <div id="menubar">
+                <ul id="menu">
+                    <li class="current"><a href="Default.aspx">Home</a></li>
+            <li><a href="ourwork.aspx">Our Work</a></li>
+            <li><a href="testimonials.aspx">Testimonials</a></li>
+            <li><a href="projects.aspx">Projects</a></li>
+            <li><a href="ContactUs.aspx">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </li>
+          </ul>
+        </div><!--close menubar-->
+      </div><!--close header-->	  
+	  <div id="banner_image">
+	    <div id="slider-wrapper">        
+          <div id="slider" class="nivoSlider">
+            <img src="images/5.jpg" alt="" />
+            <img src="images/6.jpg" alt="" />
+            <img src="images/10.jpg" alt="" />
+            <img src="images/11.jpg" alt="" />
+            <img src="images/12.jpg" alt="" />
+		  </div><!--close slider-->
+		</div><!--close slider_wrapper-->
+	  </div><!--close banner_image-->			  
+	  <div id="content">
+        <div class="content_item">
+		  <h1>Welcome To Appointment System</h1>
+          <p class="style2">
+              <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+KO;mso-bidi-language:AR-SA">With an amazing growth in web technologies over the past few years 
+              tremendous changes have been taken place, such as booking an appointment online 
+              has gained and became popular in different types of businesses,</span><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;mso-fareast-font-family:
+Batang;mso-ansi-language:EN-US;mso-fareast-language:KO;mso-bidi-language:AR-SA"> </span>
+              <span style="font-size: 11.0pt; font-family: &quot;Times New Roman&quot;,&quot;serif&quot;; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-ansi-language: EN-US; mso-fareast-language: KO; mso-bidi-language: AR-SA; text-align: justify;">
+              to name a few, especially in the field of health care systems, academia 
+              (Schools, universities, etc.) are using different types of web-based appointment 
+              management system application that helps in making the appointments easy and 
+              making it more streamlined. Web applications have always helped in streamlining 
+              day to day tasks thus making the life easier.
+              <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+KO;mso-bidi-language:AR-SA"><span style="mso-spacerun:yes">&nbsp;</span>To make the scheduling 
+              process easier, simpler, effective and especially be dynamic, to avoid the human 
+              errors in setting up the appointments manually the effective solution could be 
+              to develop a web application</span></span></p>
+        </div><!--close content_item-->
+	    <div class="content_image">
+		  <a href="#"><img style=" border: 10px solid #FFF;" alt="image" src="images/1.png" /></a>
+		</div><!--close content_image-->
+		<div class="content_text">
+		    <p class="style2">
+                <span class="style3" 
+                    style="line-height: 115%; mso-fareast-font-family: &quot;Times New Roman&quot;">
+                The students, faculty and university staff, who are using the system should 
+                receive the real time information. So the main goal of this project is to turn 
+                the conventional (traditional) approach of appointment system and also to design 
+                and evaluate the system into a web based online appointment management systems 
+                which would be a great help the students and faculty or university staff to 
+                interact with each other in a much efficient and effective way, where all the 
+                appointment processes are verified.</span></p>
+            <p class="MsoNormal">
+                <span style="font-size: 11.0pt; line-height: 115%; mso-fareast-font-family: &quot;Times New Roman&quot;; font-family: 'Times New Roman';">
+                The significance of this system is to keep away (eliminate) the issues caused by 
+                human errors by implementing new web based online appointment system which will 
+                be developed and programmed by asp.net with behind code C#, where faculty and 
+                students can interact with each other in real time.<o:p></o:p></span></p>
+		  <p>&nbsp;</p>
+		</div>
+          <!--close content_text-->  
+		<br style="clear:both"/>
+	    <div class="content_image_right">
+		  <a href="#"><img style=" border: 10px solid #FFF;" alt="image" src="images/city.jpg" /></a>
+		</div><!--close content_image-->
+		<div class="content_text_left">
+		  <p class="style2">
+              <span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+KO;mso-bidi-language:AR-SA">.Net is newly designed Microsoft&#39;s tool, revolutionized platform 
+              aimed to bound development language, applications, data stores and operating 
+              system together into a distributed, unified enterprises platform. </span>
+              <span class="style4" 
+                  style="font-size:11.0pt;line-height:115%;mso-fareast-font-family:&quot;Times New Roman&quot;">
+              This approach of model driven has been proved or is proved in extending best 
+              practices and classical methods of software engineering to the web.<o:p><span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+KO;mso-bidi-language:AR-SA">This web application of appointment system helps the faculty and 
+              students to administer and register, Create an appointment in an easy and 
+              efficient way .</span></o:p></span></p>
+		</div>
+          <!--close content_text-->  		
+		
+	  </div><!--close content-->	    
+
+      <div class="sidebar_container">  		  
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Latest Blog</h4>
+            <p>Make Appointment With the Professor You Want to ..</p>
+		      <a href="#">Read more</a>
+           </div><!--close sidebar_item--> 
+         </div><!--close sidebar-->     		
+	    <div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Latest Blog</h2>
+		  	<h4>November 2012</h4>
+            <p>Want to Contribute to the the Online Appointment Management System</p>
+		      <a href="#">Read more</a>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Latest Blog</h2>
+			<h4>December 2012</h4>
+            <p>Users Can Check Their Email in this Site Itself without migrating out of the application</p>
+		      <a href="#">Read more</a>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  
+      </div><!--close sidebar_container-->  
+	  
+    </div><!--close site_content-->	
+    <div id="footer"> 
+      <a href="http://validator.w3.org/check?uri=referer">Home</a> | <a href="http://fotogrph.com/">
+        Contact us</a> | website by <a href="http://www.araynordesign.co.uk">Koushik 
+        Tammin</a><span class="style1">eedi
+    <%--    <div id="fblikediv">
+   <img src="/images/fb-like-button.jpg"
+        id="fblikeimg" 
+        onMouseOver="return renderFbLike();">
+</div>--%>
+<iframe
+    src="http://www.facebook.com/plugins/like.php?href=http://localhost:2591/Appointment%20System/Default.aspx" 
+    scrolling="no" 
+    frameborder="0" 
+    style="border-style: none; border-color: inherit; border-width: medium; overflow:hidden; width:124px; height:22px; float: left; color: #000000;" 
+    allowTransparency="true">
+</iframe> 
+<iframe allowtransparency="true" frameborder="0" scrolling="no"
+        src="https://platform.twitter.com/widgets/tweet_button.html"
+        
+            style="width:86px; height:22px; float: left; clip: rect(auto, auto, auto, auto);"></iframe>
+        <iframe allowtransparency="true" frameborder="0" scrolling="no"
+  src="//platform.twitter.com/widgets/follow_button.html?screen_name=twitterapi"
+  style="width:103px; height:22px; float: left; clip: rect(auto, auto, auto, auto);"></iframe>
+       </div><!--close footer-->	
+  </div><!--close main-->	
+    </form>
+</body>
+</html>
