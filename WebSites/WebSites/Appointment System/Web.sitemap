@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="admin.aspx" title="Home" description="Admin Page">
+    <siteMapNode url="" title="Modify Profile" description="Admin Profile Modify" >
+      <siteMapNode url="changepassword.aspx" title="Change Password"  description="Change the password" />
+      <siteMapNode url="calendersetup.aspx" title="Set Calender"  description="Set the calender Date" />
+    </siteMapNode>
+
+    <siteMapNode url="" title="Appointment" description="Modifying Appointments">
+      <siteMapNode url="appointmentreport.aspx" title="Appointment Report"  description="Get the report of appointments" />
+      <siteMapNode url="absentstudentreport.aspx" title="Absent Student Report"  description="Get the Student Absent Report" />
+    </siteMapNode>
+
+    <siteMapNode url="" title="Student Info" description="Modify Student Profile">
+      <siteMapNode url="createstudent.aspx" title="Create Student"  description="Create a new Student" />
+      <siteMapNode url="editstudent.aspx" title="Edit Student Info"  description="Edit the student Info" />
+    </siteMapNode>
+
+    <siteMapNode url="" title="Professor Info" description="Modify Professor Profile">
+      <siteMapNode url="createlecturer.aspx" title="Add Professor"  description="Create a new Profeesor" />
+      <siteMapNode url="editlecturer.aspx" title="Edit Professor Info"  description="Edit professor Info" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
